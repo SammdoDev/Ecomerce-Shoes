@@ -17,17 +17,18 @@ navOpenBtn.addEventListener("click", () => {
   nav.classList.remove("openSearch");
   searchIcon.classList.replace("uil-times", "uil-search");
 });
+
 navCloseBtn.addEventListener("click", () => {
   nav.classList.remove("openNav");
 });
 
-// Menangani klik untuk membuka dan menutup dropdown
+
+
 document.querySelectorAll('.dropbtn').forEach(dropbtn => {
     dropbtn.addEventListener('click', function(event) {
-        const dropdownContent = this.nextElementSibling;  // Mengambil elemen dropdown-content
-        const arrowIcon = this.querySelector('.arrow-icon');  // Mengambil ikon panah
+        const dropdownContent = this.nextElementSibling;
+        const arrowIcon = this.querySelector('.arrow-icon');
 
-        // Toggle dropdown content visibility
         if (dropdownContent.style.display === 'block') {
             dropdownContent.style.display = 'none';  
             arrowIcon.style.transform = 'rotate(0deg)';  
