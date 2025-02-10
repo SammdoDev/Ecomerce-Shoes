@@ -2,50 +2,51 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Traveloke</title>
+    <title>StrideX</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsive.css" />
-    <!-- Unicons CSS -->
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
   </head>
   <body>
-    <nav class="nav">
-      <i class="uil uil-align-left navOpenBtn"></i>
-      <a href="#" class="logo">Traveloke</a>
-
-      <ul class="nav-links">
-        <i class="uil uil-times navCloseBtn"></i>
+    <header>
+    <nav>
+      <a href="#" class="logo">StrideX</a>
+      <ul id="nav-links" class="nav-links">
         <li><a href="#">Home</a></li>
-        <div class="dropdown">
-          <button class="dropbtn">
-            Services <i class="uil uil-angle-down arrow-icon"></i>
-          </button>
-          <div class="dropdown-content">
-            <a class="pesawat" href="#pesawat"><i class="uil uil-plane-departure"></i> Pesawat</a>
-            <a class="kereta" href="#kereta"><i class="uil uil-subway"></i> Kereta</a>
-            <a class="kapal" href="#kapal"><i class="uil uil-ship"></i> Kapal</a>
-          </div>
-        </div>
+        <li><a href="#">Products</a></li>
         <li><a href="#">Promo</a></li>
         <li><a href="#">Event</a></li>
-
-        <div class="btn-akun">
-          <a href="#login" class="btn-login">Login</a>
-          <a href="#signin" class="btn-sign">Sign In</a>
-        </div>
       </ul>
 
-      <i class="uil uil-search search-icon" id="searchIcon"></i>
-      <div class="search-box">
-        <i class="uil uil-search search-icon"></i>
-        <input type="text" placeholder="Search here..." />
+      <div id="burger" class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
       </div>
+    <button class="nav-right">
+      <a href="#"><i class="uil uil-shopping-bag"></i></a>
+      <a href="#"><i class="uil uil-user-circle"></i></a>
+    </button>
     </nav>
+
+    <div class="header-content">
+    <div class="header-title">
+      Step Bold, Stay Stylish.
+    </div>
+    <div class="main-header">
+      <img src="./assets/header-shoes.png" alt="Nike Shoes">
+      <div class="desc-header">
+        <p>Performance You Can Feel, Impact You Can't See.</p>
+        <button class="btn-main-header">Shop Now</button>
+      </div>
+    </div>
+  </div>
+  </header>
     <script src="script.js"></script>
   </body>
 </html>
