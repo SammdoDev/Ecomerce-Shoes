@@ -5,14 +5,14 @@
     transform: translateX(-50%);
   }
   .nav-links {
+    box-sizing: border-box;
     display: none;
     width: 100%;
     flex-direction: column;
     background-color: #0c0c0c;
     position: absolute;
     top: 0;
-    left: 0;
-    padding: 5rem 2rem 1rem 2rem;
+    padding: 4rem 1rem 1rem 1rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 
@@ -30,15 +30,26 @@
     margin-top: 0px;
   }
 
-  .main-header{
+  .main-header {
     flex-direction: column;
   }
 
-  .header-title{
+  .header-title {
+    position: relative;
+    bottom: 30px;
     font-size: 2rem;
   }
 
-  .main-header{
+  .main-header {
     gap: 1rem;
+  }
+
+  .main-header img {
+    width: 300px;
+  }
+
+  .desc-header {
+    position: relative;
+    bottom: 100px;
   }
 }

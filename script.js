@@ -8,3 +8,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
   
+
+  function toggleBrand(selectedBrand, brandName) {
+    const brands = document.querySelectorAll('.brand');
+    const cards = document.querySelectorAll('.card');
+  
+    brands.forEach(brand => brand.classList.remove('expanded'));
+  
+    selectedBrand.classList.add('expanded');
+  
+    cards.forEach(card => {
+      card.style.display = 'none';
+      card.classList.remove('extended');
+    });
+  
+    const brandCards = document.querySelectorAll(`.${brandName}`);
+    brandCards.forEach(card => {
+      card.style.display = 'block';
+      card.classList.add('extended');
+    });
+  }
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    const nikeBrand = document.querySelector('.brand-list .brand');
+    toggleBrand(nikeBrand, 'nike');
+  });
+  

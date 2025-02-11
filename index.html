@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StrideX</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="responsive.css" />
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
     <link
       rel="stylesheet"
@@ -14,39 +14,86 @@
   </head>
   <body>
     <header>
-    <nav>
-      <a href="#" class="logo">StrideX</a>
-      <ul id="nav-links" class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Promo</a></li>
-        <li><a href="#">Event</a></li>
-      </ul>
+      <nav>
+        <a href="#" class="logo">StrideX</a>
+        <ul id="nav-links" class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Promo</a></li>
+          <li><a href="#">Event</a></li>
+        </ul>
 
-      <div id="burger" class="burger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-    <button class="nav-right">
-      <a href="#"><i class="uil uil-shopping-bag"></i></a>
-      <a href="#"><i class="uil uil-user-circle"></i></a>
-    </button>
-    </nav>
+        <div id="burger" class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <button class="nav-right">
+          <a href="#"><i class="uil uil-shopping-bag"></i></a>
+          <a href="#"><i class="uil uil-user-circle"></i></a>
+        </button>
+      </nav>
 
-    <div class="header-content">
-    <div class="header-title">
-      Step Bold, Stay Stylish.
-    </div>
-    <div class="main-header">
-      <img src="./assets/header-shoes.png" alt="Nike Shoes">
-      <div class="desc-header">
-        <p>Performance You Can Feel, Impact You Can't See.</p>
-        <button class="btn-main-header">Shop Now</button>
+      <div class="header-content">
+        <div class="header-title">Step Bold, Stay Stylish.</div>
+        <div class="main-header">
+          <img src="./assets/header-shoes.png" alt="Nike Shoes" />
+          <div class="desc-header">
+            <p>Performance You Can Feel, Impact You Can't See.</p>
+            <button class="btn-main-header">Shop Now</button>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  </header>
+    </header>
+
+    <section id="product-section">
+      <div class="title title-product">Our Branded Shoes</div>
+    
+      <!-- Brand List -->
+      <div class="brand-list">
+        <div class="brand expanded" onclick="toggleBrand(this, 'nike')">
+          <img src="./assets/nike.png" alt="Nike" />
+          <span class="brand-name">Nike</span>
+        </div>
+        <div class="brand" onclick="toggleBrand(this, 'adidas')">
+          <img src="./assets/adidas.png" alt="Adidas" />
+          <span class="brand-name">Adidas</span>
+        </div>
+        <div class="brand" onclick="toggleBrand(this, 'puma')">
+          <img src="./assets/puma.png" alt="Puma" />
+          <span class="brand-name">Puma</span>
+        </div>
+        <div class="brand" onclick="toggleBrand(this, 'nb')">
+          <img src="./assets/nb.png" alt="New Balance" />
+          <span class="brand-name">New Balance</span>
+        </div>
+      </div>
+    
+      <div class="product-container">
+        <div class="card nike extended">
+          <h3>Produk Nike</h3>
+          <p>Temukan koleksi terbaru dari Nike.</p>
+        </div>
+    
+        <!-- Produk Adidas -->
+        <div class="card adidas" style="display: none;">
+          <h3>Produk Adidas</h3>
+          <p>Kenyamanan dan performa optimal.</p>
+        </div>
+    
+        <!-- Produk Puma -->
+        <div class="card puma" style="display: none;">
+          <h3>Produk Puma</h3>
+          <p>Desain inovatif, penuh energi.</p>
+        </div>
+
+        <div class="card nb" style="display: none;">
+          <h3>Produk New Balance</h3>
+          <p>Desain inovatif, penuh energi.</p>
+        </div>
+      </div>
+    </section>
+    
     <script src="script.js"></script>
   </body>
 </html>
